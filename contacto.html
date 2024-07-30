@@ -15,28 +15,25 @@
 
 
 <body>
-    <div class="barra">
-
+    <header class="barra">
         <h1>
             <span class=nombre>
-                Supermercados Naturalia
-            </span>
+                Supermercados Naturalia</span>
         </h1>
-        <div class="link">
+        <nav class="link">
             <a class="hover" target="_blank" href="./productos.html">Productos</a>
             <i class="fa-solid fa-shop"></i>
             <a class="hover" href="./home.html">Home</a>
             <i class="fa-solid fa-house"></i>
-        </div>
-
-    </div>
+        </nav>
+    </header>
 
     <div class="contactoSuper">
         <div class="container-info">
             <h1 class="h1">Contactanos</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic numquam quae,
-                error nemo ipsam ad corrupti in doloremque laborum doloribus dolorum totam
-                provident qui consequuntur? Dolorem asperiores provident esse minus?</p>
+            <p class="text">Tienes alguna duda o sugerencia? ¡Queremos escucharte! En nuestra sección de contacto, encontrarás todas las formas de
+            comunicarte con nosotros. Nuestro equipo está siempre dispuesto a ayudarte y resolver tus inquietudes de manera rápida y
+            personalizada.</p>
 
             <a class="a"><i class="fa-solid fa-phone"></i> 2284-567489</a>
             <a class="a"><i class="fa-solid fa-envelope"></i> supermercadonaturalia@gmail.com</a>
@@ -49,11 +46,11 @@
         <div class="form">
             <form>
                 <label for="nombre">Nombre:</label>
-                <input class="campo" type="text" placeholder="Ingresa tu nombre" id="nombre">
+                <input class="campo" type="text"  placeholder="Ingresa tu nombre" id="nombre" pattern= "[a-zA-Z+]" required>
                 <label for="apellido">Apellido:</label>
-                <input class="campo" type="text" placeholder="Ingresa tu apellido"  id="apellido">
+                <input class="campo" type="text" pattern= "[a-zA-Z+]" required placeholder="Ingresa tu apellido"  id="apellido">
                 <label for="telefono">Telefono:</label>
-                <input class="campo" type="text" placeholder="Ingresa tu teléfono" id="telefono">
+                <input class="campo" type="number" pattern="[0-9]{10}" placeholder="Ingresa tu teléfono" id="telefono">
                 <label for="email">Email:</label>
                 <input class="campo" type="text" placeholder="Ingresa tu dirección de email"  id="email">
                 <p>Nos gustaria saber como fue tu experiencia de compra:</p>
