@@ -6,31 +6,25 @@
     box-sizing: border-box;
 }
 
-.ofertas {
-    display: flex;
-    flex-direction: row; 
-    align-items: center; 
-    justify-content: center; 
-    width: 100%; 
-    height: 100%; 
-    background-color: #f0f0f0; 
-    margin-top: 10%;  
-    animation: blink 3s infinite; /* Animación de parpadeo */
-}
-.ofertas img{
-    max-width: 200%;
+
+.ofertas{
+    max-width: 100%;
     height: auto; 
-    margin-bottom: 20px; /* Espacio entre la imagen y el siguiente contenido */
+    margin-bottom: 20px; 
+    object-fit: contain;
+    
+   
 }
 
 
 .body-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: inline-block;
+    align-content: center;
     width: 90%; 
     height: 10%; 
-    padding-bottom: 390px; /* Espacio en la parte inferior para otros elementos */
+    padding-bottom: 250px; /* Espacio en la parte inferior para otros elementos */
+    animation: blink 2s infinite; /* Animación de parpadeo */
+    
 }
 
 /* Animación de parpadeo */
@@ -51,15 +45,15 @@
     color: #000000;
     text-align: justify;
     font-style: Ubuntu, sans-serif;
-    font-size: 22px;
+    font-size: 15px;
     align-items: center;
     animation: scroll-left 20s linear infinite;
     height: 1%;
   }
   
   .icono-what {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
   .whatsapp-link:hover{
     opacity: 0.5;
@@ -81,28 +75,60 @@ body{
 
 .productos{
     color: rgb(255, 255, 255);
-    text-shadow: 8px 8px 8px #000000;
-    font-size: 200%;
+    font-size: 100%;
     align-content: center;
     justify-content: center;
-    font-family: Ubuntu, sans-serif;
     margin: 2%;
-
-    
 }
-.hover{
+
+/*.hover{
     color: rgb(255, 255, 255);
     text-shadow: 8px 8px 8px #000000;
     font-size: 100%;
     align-content: center;
     justify-content: center;
-}
+}*/
 .hover:hover{
-    color: rgb(215, 230, 215);
     cursor: pointer;
+    color: #dde5b6;
+    font-size: 150%;
  }
+ a {
+    color:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:normal;
+    border: #dde5b6 1px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 2px;
 
-.h2{
+}
+.fa-solid {
+    color: #081c15;
+    font-size: 20px;
+    margin: 10px;
+  }
+
+ .h1 {
+  font-style: italic;
+  font-family: sofia, sans-serif;
+  text-align: left;
+  margin-left: 2%;
+  color:#239e24;
+}
+.nombre{
+    font-family: sofia, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 8px 8px 8px #000000;
+    font-size: 52px;
+    text-align: center;
+    margin-left: 25px;
+
+}
+
+
+h2{
     color: rgb(255, 255, 255);
     font-size: 20px;
     text-align: center; 
@@ -148,7 +174,7 @@ header{
 
 .contenedor-general{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 100%;
 }
@@ -161,6 +187,7 @@ header{
     border-radius: 15px;
     background-color:#0c691e;
     padding: 15px;
+    height: 100%;
    
 }  
 .cajas:hover{
@@ -182,20 +209,17 @@ header{
 }
 
 .info-producto{
-    padding: 15px 30px;
+    padding: 10px 20px;
     line-height: 2;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-family: Ubuntu, sans-serif;
-
-    
-    
-
+    font-family: Arial, Helvetica,sans-serif;
 }
+
 .precio{
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -203,34 +227,35 @@ header{
     overflow: hidden;
 }
 
-
 .button {
-    display: flex;
-    align-items: center;
-    background-color: #239e24; /* Color de fondo del botón */
+    align-items:end;
+    background-color: #239e24; 
     border: 1px solid #239e24;
     border-radius: 5px;
     overflow: hidden;
     cursor: pointer;
     font-family: Arial, sans-serif;
     width: fit-content;
+    margin-left: 30px;
 }
+
 .button input {
     border: none;
     padding: 10px;
     margin: 0;
     outline: none;
     font-size: 16px;
-    width: 60px; /* Ajusta el ancho del input según sea necesario */
+    width: 60px;
 }
+
 .button button {
-    background-color: #239e24; /* Color de fondo del botón */
+    background-color: #239e24; 
     border: none;
     padding: 10px 20px;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-    border-left: 1px solid#239e24; /* Separador entre input y botón */
+    border-left: 1px solid#239e24; 
 }
 
 
