@@ -46,7 +46,7 @@
         <div class="form">
             <form>
                 <label for="nombre">Nombre:</label>
-                <input class="campo" type="text"  placeholder="Ingresa tu nombre" id="nombre" pattern= "[a-zA-Z+]" required>
+                <input class="campo" type="text"  placeholder="Ingresa tu nombre" id="nombre" onkeydown="return /[a-zA-Z]/i.test(event.key)" required>
                 <label for="apellido">Apellido:</label>
                 <input class="campo" type="text" pattern= "[a-zA-Z+]" required placeholder="Ingresa tu apellido"  id="apellido">
                 <label for="telefono">Telefono:</label>
@@ -78,7 +78,7 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-    <script src="main.js"></script>
+    <script src="contacto.js"></script>
 </body>
 
 </html>
